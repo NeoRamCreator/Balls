@@ -31,7 +31,6 @@ const Canvas: React.FC<CanvasProps> = ({
   const [changeBall, setChangeBall] = useState<number | null>(null);
 
   const canvasRef = useRef<HTMLCanvasElement>(null); // Ссылка на элемент холста
-  const [draggingBallId, setDraggingBallId] = useState<number | null>(null); // Идентификатор перетаскиваемого шара
 
   // Эффект для отрисовки шаров на холсте
   useEffect(() => {
